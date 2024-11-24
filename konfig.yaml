@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=https://unpkg.com/konfig-lib@latest/konfig-yaml.schema.json
+
+outputDirectory: /tmp/sentdm-sdks-out
+specPath: openapi.yaml
+generators:
+  java:
+    version: 1.0.0
+    groupId: dm.sent
+    artifactId: sentdm-java-sdk
+    clientName: Sentdm
+    outputDirectory: java
+    git:
+      userId: sentdm
+      repoId: sent-sdks/tree/main/java
+  ruby:
+    version: 1.0.0
+    moduleName: Sentdm
+    gemName: sentdm
+    outputDirectory: ruby
+    git:
+      userId: sentdm
+      repoId: sent-sdks/tree/main/ruby
+  python:
+    version: 1.0.0
+    packageName: sentdm
+    projectName: sentdm-python-sdk
+    outputDirectory: python
+    clientName: Sentdm
+    git:
+      userId: sentdm
+      repoId: sent-sdks/tree/main/python
+  typescript:
+    version: 1.0.0
+    npmName: sentdm-typescript-sdk
+    outputDirectory: typescript
+    clientName: Sentdm
+    git:
+      userId: sentdm
+      repoId: sent-sdks/tree/main/typescript
+  csharp:
+    version: 1.0.0
+    packageName: Sentdm.Net
+    clientName: Sentdm
+    outputDirectory: csharp
+    logoPath: logo-500px.png
+    git:
+      userId: sentdm
+      repoId: sent-sdks/tree/main/csharp
+  swift:
+    version: 1.0.0
+    projectName: Sentdm
+    podAuthors: sent.dm
+    outputDirectory: swift
+    git:
+      userId: sentdm
+      repoId: sent-sdks/tree/main/swift
+  objc:
+    version: 1.0.0
+    podName: SentdmClient
+    authorName: sent.dm
+    authorEmail: engineering@sent.dm
+    classPrefix: S
+    outputDirectory: objc
+    git:
+      userId: sentdm
+      repoId: sent-sdks/tree/main/objc
+  kotlin:
+    version: 1.0.0
+    groupId: dm.sent
+    artifactId: sentdm-kotlin-sdk
+    outputDirectory: kotlin
+    git:
+      userId: sentdm
+      repoId: sent-sdks/tree/main/kotlin
+  go:
+    version: 1.0.0
+    packageName: sentdm
+    outputDirectory: go
+    git:
+      userId: sentdm
+      repoId: sent-sdks/go
